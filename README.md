@@ -136,18 +136,37 @@ Django Admin:
 
 ## 📸 Screenshots
 
-Screenshots of the NEXORA application can be added here to showcase the user interface.
+### 🏠 Home Page
 
-Recommended screenshots:
+![NEXORA Home Page](screenshots/home.png)
 
-* 🏠 Home page
-* 🛍️ Product listing
-* 📄 Product details
-* 🛒 Shopping cart
-* 🔐 Login/registration
-* 💳 Checkout
-* 📦 Order history
-* ⚙️ Django admin dashboard
+### 🛍️ Product Listing
+
+![NEXORA Product Listing](screenshots/products.png)
+
+### 📄 Product Details
+
+![NEXORA Product Details](screenshots/product-details.png)
+
+### 🛒 Shopping Cart
+
+![NEXORA Shopping Cart](screenshots/cart.png)
+
+### 🔐 Login / Registration
+
+![NEXORA Login](screenshots/login.png)
+
+### 💳 Checkout
+
+![NEXORA Checkout](screenshots/checkout.png)
+
+### 📦 Order History
+
+![NEXORA Orders](screenshots/orders.png)
+
+### ⚙️ Django Admin
+
+![NEXORA Django Admin](screenshots/admin.png)
 
 ## 🎓 CodeAlpha Internship
 
