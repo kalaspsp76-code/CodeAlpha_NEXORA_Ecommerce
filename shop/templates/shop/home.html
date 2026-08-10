@@ -1,0 +1,19 @@
+{% extends "shop/base.html" %}
+{% block title %}NEXORA — Modern Shopping{% endblock %}
+{% block content %}
+<section class="hero">
+  <div><p class="eyebrow">SMART SHOPPING • SIMPLE LIFE</p><h1>Everything you need.<br><span>One beautiful store.</span></h1><p>Discover useful products selected for modern everyday living.</p><a class="btn" href="#products">Shop now →</a></div>
+  <div class="hero-card">N<br><small>NEXORA COLLECTION</small></div>
+</section>
+<section class="toolbar" id="products">
+  <div class="chips"><a class="{% if not selected_category %}active{% endif %}" href="{% url 'home' %}">All</a>{% for value,label in categories %}<a class="{% if selected_category == value %}active{% endif %}" href="?category={{ value }}">{{ label }}</a>{% endfor %}</div>
+</section>
+<section class="grid">
+{% for product in products %}
+<article class="card">
+  <a href="{% url 'product_detail' product.slug %}"><img src="{{ product.image_url }}" alt="{{ product.name }}"></a>
+  <div class="card-body"><small>{{ product.category }}</small><h3>{{ product.name }}</h3><p>{{ product.description|truncatechars:75 }}</p><div class="row"><strong>₹{{ product.price }}</strong><a class="add" href="{% url 'add_to_cart' product.id %}">+ Add</a></div></div>
+</article>
+{% empty %}<div class="empty"><h2>No products found</h2><p>Try another search or category.</p></div>{% endfor %}
+</section>
+{% endblock %}

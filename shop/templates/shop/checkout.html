@@ -1,0 +1,6 @@
+{% extends "shop/base.html" %}
+{% block title %}Checkout — NEXORA{% endblock %}
+{% block content %}
+<div class="page-head"><p class="eyebrow">SECURE CHECKOUT</p><h1>Complete your order</h1></div>
+<div class="checkout"><form method="post" class="form-card">{% csrf_token %}<label>Full name<input name="full_name" value="{{ user.get_full_name }}" required></label><label>Email<input type="email" name="email" value="{{ user.email }}" required></label><label>Address<textarea name="address" required></textarea></label><div class="two"><label>City<input name="city" required></label><label>Postal code<input name="postal_code" required></label></div><button class="btn full">Place Order · ₹{{ total }}</button></form><aside class="summary"><h2>Order total</h2>{% for product,quantity in items %}<div class="row"><span>{{ product.name }} × {{ quantity }}</span><strong>₹{{ product.price }} × {{ quantity }}</strong></div>{% endfor %}<hr><div class="row"><strong>Total</strong><strong>₹{{ total }}</strong></div></aside></div>
+{% endblock %}

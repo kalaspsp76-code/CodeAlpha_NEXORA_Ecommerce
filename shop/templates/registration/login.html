@@ -1,0 +1,3 @@
+{% extends "shop/base.html" %}
+{% block title %}Login — NEXORA{% endblock %}
+{% block content %}<div class="auth"><div class="form-card"><p class="eyebrow">WELCOME BACK</p><h1>Login</h1><form method="post">{% csrf_token %}<label>Username<input name="username" required></label><label>Password<input type="password" name="password" required></label><button class="btn full">Login</button></form><p>New here? <a href="{% url 'register' %}">Create an account</a></p></div></div>{% endblock %}

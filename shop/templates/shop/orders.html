@@ -1,0 +1,6 @@
+{% extends "shop/base.html" %}
+{% block title %}My Orders — NEXORA{% endblock %}
+{% block content %}
+<div class="page-head"><p class="eyebrow">ACCOUNT</p><h1>My Orders</h1></div>
+{% for order in orders %}<article class="order"><div class="row"><div><h3>Order #{{ order.id }}</h3><small>{{ order.created_at|date:"d M Y, H:i" }}</small></div><span class="badge">{{ order.status }}</span><strong>₹{{ order.total }}</strong></div><div class="order-items">{% for item in order.items.all %}<span>{{ item.product.name }} × {{ item.quantity }}</span>{% endfor %}</div></article>{% empty %}<div class="empty"><h2>No orders yet.</h2><a class="btn" href="{% url 'home' %}">Start shopping</a></div>{% endfor %}
+{% endblock %}

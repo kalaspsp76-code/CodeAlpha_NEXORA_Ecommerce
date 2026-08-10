@@ -1,0 +1,8 @@
+{% extends "shop/base.html" %}
+{% block title %}{{ product.name }} — NEXORA{% endblock %}
+{% block content %}
+<div class="detail">
+<img src="{{ product.image_url }}" alt="{{ product.name }}">
+<div><p class="eyebrow">{{ product.category }}</p><h1>{{ product.name }}</h1><p class="price">₹{{ product.price }}</p><p class="desc">{{ product.description }}</p><p class="stock">{% if product.stock %}✓ {{ product.stock }} available{% else %}Out of stock{% endif %}</p><a class="btn" href="{% url 'add_to_cart' product.id %}">Add to cart</a></div>
+</div>
+{% endblock %}
