@@ -1,74 +1,72 @@
-# 🛍️ NEXORA — CodeAlpha Task 1: Simple E-Commerce Store
+# 🛍️ NEXORA — Full-Stack E-Commerce Website
 
-**NEXORA** is a professional full-stack e-commerce website developed as **CodeAlpha Internship — Task 1**.
+**NEXORA** is a modern full-stack e-commerce web application built with **Python, Django, HTML, and CSS**.
 
-The application provides a complete online shopping experience with product browsing, search, category filtering, authentication, session-based shopping cart functionality, checkout, order processing, and order history.
+The project provides a complete shopping experience including product browsing, authentication, shopping cart management, checkout, order history, and Django administration.
+
+---
 
 ## 🚀 Features
 
+* 🏠 Modern home page
 * 🛍️ Product listing
-* 🔍 Product search
-* 🏷️ Category filtering
-* 📄 Product details page
-* 🛒 Session-based shopping cart
-* ➕ Quantity updates
-* ❌ Remove items from cart
-* 👤 User registration
-* 🔐 User login/logout
-* 💳 Checkout and order processing
+* 📄 Product details
+* 🛒 Shopping cart
+* 🔐 User login and registration
+* 💳 Checkout system
 * 📦 Order history
-* ⚙️ Django admin panel
-* 🗄️ SQLite database
-* 📱 Responsive user interface
+* ⚙️ Django Admin panel
+* 🗄️ Database integration
+* 📱 Responsive frontend
+* 🔎 Product browsing
+* 👤 User authentication
+
+---
 
 ## 🛠️ Technologies Used
 
 | Technology | Purpose                       |
 | ---------- | ----------------------------- |
-| HTML5      | Website structure             |
-| CSS3       | Styling and responsive design |
-| JavaScript | Client-side interactivity     |
-| Python     | Backend programming           |
-| Django     | Web framework                 |
-| SQLite     | Database                      |
-| Git        | Version control               |
-| GitHub     | Source code hosting           |
+| 🐍 Python  | Backend programming           |
+| 🎯 Django  | Web framework                 |
+| 🌐 HTML5   | Page structure                |
+| 🎨 CSS3    | Styling and responsive design |
+| 🗄️ SQLite | Database                      |
+| 🔧 Git     | Version control               |
+| 🐙 GitHub  | Source code hosting           |
+
+---
 
 ## 📂 Project Structure
 
 ```text
-CodeAlpha_NEXORA_Ecommerce/
+NEXORA_CodeAlpha_Ecommerce/
 │
 ├── manage.py
 ├── requirements.txt
-├── db.sqlite3
+├── README.md
 │
-├── project/
-│   ├── settings.py
-│   ├── urls.py
-│   └── ...
-│
-├── store/
-│   ├── models.py
-│   ├── views.py
-│   ├── urls.py
-│   ├── admin.py
-│   └── management/
+├── screenshots/
+│   ├── home.png
+│   ├── products.png
+│   ├── cart.png
+│   ├── checkout.png
+│   ├── login.png
+│   ├── order.png
+│   └── admin.png
 │
 ├── templates/
-│   └── ...
-│
 ├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
+├── media/
 │
-└── README.md
+└── ...
 ```
 
-> The exact folder names may vary depending on your current Django project structure.
+---
 
-## 💻 Run the Project Locally
+# ⚙️ Installation & Setup
+
+Follow these steps to run NEXORA locally.
 
 ### 1. Clone the repository
 
@@ -120,13 +118,15 @@ python manage.py seed_products
 python manage.py createsuperuser
 ```
 
-### 9. Start the Django development server
+Enter your username, email, and password when prompted.
+
+### 9. Start the development server
 
 ```bash
 python manage.py runserver
 ```
 
-Open the website:
+Open the application:
 
 **http://127.0.0.1:8000/**
 
@@ -134,47 +134,57 @@ Django Admin:
 
 **http://127.0.0.1:8000/admin/**
 
-## 📸 Screenshots
+---
 
-### 🏠 Home Page
+# 📸 Screenshots
+
+## 🏠 Home Page
 
 ![NEXORA Home Page](screenshots/home.png)
 
-### 🛍️ Product Listing
+---
+
+## 🛍️ Product Listing
 
 ![NEXORA Product Listing](screenshots/products.png)
 
-### 📄 Product Details
+---
 
-![NEXORA Product Details](screenshots/product-details.png)
-
-### 🛒 Shopping Cart
+## 🛒 Shopping Cart
 
 ![NEXORA Shopping Cart](screenshots/cart.png)
 
-### 🔐 Login / Registration
+---
+
+## 🔐 Login / Registration
 
 ![NEXORA Login](screenshots/login.png)
 
-### 💳 Checkout
+---
+
+## 💳 Checkout
 
 ![NEXORA Checkout](screenshots/checkout.png)
 
-### 📦 Order History
+---
 
-![NEXORA Orders](screenshots/orders.png)
+## 📦 Order History
 
-### ⚙️ Django Admin
+![NEXORA Order History](screenshots/order.png)
+
+---
+
+## ⚙️ Django Admin
 
 ![NEXORA Django Admin](screenshots/admin.png)
 
-## 🎓 CodeAlpha Internship
+---
+
+# 🎓 CodeAlpha Internship
 
 This project was developed as part of the **CodeAlpha Full Stack Development Internship**.
 
-### Task
-
-**Task 1 — Simple E-Commerce Store**
+### Task 1 — Simple E-Commerce Store
 
 The project demonstrates practical experience with:
 
@@ -187,7 +197,9 @@ The project demonstrates practical experience with:
 * Frontend development
 * Git and GitHub
 
-## 🔮 Future Improvements
+---
+
+# 🔮 Future Improvements
 
 Future versions of NEXORA could include:
 
@@ -202,14 +214,18 @@ Future versions of NEXORA could include:
 * ☁️ Cloud deployment
 * 🔐 Additional security improvements
 
-## 📌 Repository
+---
+
+# 📌 Repository
 
 **Repository:** `CodeAlpha_NEXORA_Ecommerce`
 
 **GitHub:**
 https://github.com/kalaspsp76-code/CodeAlpha_NEXORA_Ecommerce
 
-## 👨‍💻 Author
+---
+
+# 👨‍💻 Author
 
 **Kala S P**
 
@@ -220,4 +236,4 @@ https://github.com/kalaspsp76-code
 
 ⭐ If you find this project interesting, consider giving the repository a star.
 
-**NEXORA — A modern full-stack e-commerce experience.**
+> **NEXORA — A modern full-stack e-commerce experience.**
